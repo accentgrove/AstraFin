@@ -1,0 +1,13 @@
+services:
+  radar:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8765:8765"
+    environment:
+      RADAR_TOKEN: ${RADAR_TOKEN:?Set a long random token in .env}
+      RADAR_ALLOWED_HOSTS: ${RADAR_ALLOWED_HOSTS:-localhost,127.0.0.1}
+    volumes:
+      - radar-data:/data
+volumes:
+  radar-data:
