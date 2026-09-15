@@ -1,0 +1,1 @@
+{"name":"personal-trading-radar","version":"0.1.0","private":true,"scripts":{"dev":"RADAR_PORT=4173 RADAR_ALLOWED_HOSTS=localhost,127.0.0.1,terminal.local python3 app.py","test":"python3 -m unittest discover -s tests -v"}}

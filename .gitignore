@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AstraFin local data and configuration
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+data/
+*.sqlite3*
+*.log
+node_modules/
+.sites-runtime/
+.openai/
